@@ -2,19 +2,20 @@
     <fieldset>
         <legend>Datos personales</legend>
         <label for="nombre">Nombre y apellidos: </label>
-        <input id="nombre" type="text"><br>
+        <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre"><br>
 
         <label for="sexo">Sexo: </label>
-        <select id="sexo">
-            <!--Etiqueta option-->
-            <option value="value1">Hombre</option> 
-            <option value="value2" selected>Mujer</option>
+        <select id="sexo" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
         </select><br><br>
 
         <label>Edad: </label>
-        <input type="checkbox" value="20-39"> 20-39
-        <input type="checkbox" value="40-59"> 40-59
-        <input type="checkbox" value="60-79"> 60-79<br><br>
+        <input type="radio" name="edad" value="20-39"> 20-39
+        <input type="radio" name="edad" value="40-59"> 40-59
+        <input type="radio" name="edad" value="60-79"> 60-79<br><br>
 
         <label for="email">Email: </label>
         <input id="email" type="email"><br><br>
@@ -33,10 +34,10 @@
         </select><br><br>
     </fieldset>
     <fieldset>
-    <legend>Preferencias</legend>
+        <legend>Preferencias</legend>
 
-      <label for="navegador">Elige tu navegador favorito: </label>
-      <input id="navegador" list="browsers">
+        <label for="navegador">Elige tu navegador favorito: </label>
+        <input id="navegador" list="browsers">
         <datalist id="browsers">
             <option value="Chrome">
             <option value="Firefox">
@@ -45,10 +46,9 @@
             <option value="Safari">
             <option value="Microsoft Edge">
         </datalist><br><br>
-    </legend>
+
         <label for="mensaje">Escribe tu mensaje: </label>
         <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
     </fieldset>  
     <input type="submit" value="Enviar">
 </form>
-
