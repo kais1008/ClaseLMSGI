@@ -13,12 +13,29 @@
         </select><br><br>
 
         <label>Edad: </label>
-        <input type="radio" name="edad" value="20-39"> 20-39
-        <input type="radio" name="edad" value="40-59"> 40-59
-        <input type="radio" name="edad" value="60-79"> 60-79<br><br>
+        <input type="checkbox" name="edad" value="20-39"> 20-39
+        <input type="checkbox" name="edad" value="40-59"> 40-59
+        <input type="checkbox" name="edad" value="60-79"> 60-79<br><br>
 
         <label for="email">Email: </label>
-        <input id="email" type="email"><br><br>
+        <input id="email" 
+        name="correo" 
+        type="correo" 
+        required
+        placeholder="Correo electrónico"
+        pattern=".+@g\.educaand\.es"
+        title="Introduce tu corrreo de @g.educaand.es"><br><br>
+
+        <label for="tel">Telefono: </label>
+<input id="Tel" 
+       name="Tel" 
+       type="tel" 
+       required
+       placeholder="Telefono"
+       pattern="^[6-9][0-9]{8}" 
+       title="Introduce un número de teléfono válido (9 dígitos, empieza con 6, 7, 8 o 9)">
+<br><br>
+
 
         <label for="estudios">Estudios: </label>
         <select id="estudios">
