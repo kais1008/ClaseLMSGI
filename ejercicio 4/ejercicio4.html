@@ -1,0 +1,71 @@
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre y apellidos: </label>
+        <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre"><br>
+
+        <label for="sexo">Sexo: </label>
+        <select id="sexo" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <label>Edad: </label>
+        <input type="checkbox" name="edad" value="20-39"> 20-39
+        <input type="checkbox" name="edad" value="40-59"> 40-59
+        <input type="checkbox" name="edad" value="60-79"> 60-79<br><br>
+
+        <label for="email">Email: </label>
+        <input id="email" 
+        name="correo" 
+        type="correo" 
+        required
+        placeholder="Correo electrónico"
+        pattern=".+@g\.educaand\.es"
+        title="Introduce tu corrreo de @g.educaand.es"><br><br>
+
+        <label for="tel">Telefono: </label>
+<input id="Tel" 
+       name="Tel" 
+       type="tel" 
+       required
+       placeholder="Telefono"
+       pattern="^[6-9][0-9]{8}" 
+       title="Introduce un número de teléfono válido (9 dígitos, empieza con 6, 7, 8 o 9)">
+<br><br>
+
+
+        <label for="estudios">Estudios: </label>
+        <select id="estudios">
+           <optgroup label="Estudios Universitarios">
+              <option>Doctorado</option>
+              <option>Máster</option>
+              <option>Grado</option>
+           </optgroup>
+           <optgroup label="Ciclo Formativo">
+              <option>Grado Superior</option>
+              <option>Grado Medio</option>
+           </optgroup>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+
+        <label for="navegador">Elige tu navegador favorito: </label>
+        <input id="navegador" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist><br><br>
+
+        <label for="mensaje">Escribe tu mensaje: </label>
+        <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
+    </fieldset>  
+    <input type="submit" value="Enviar">
+</form>
